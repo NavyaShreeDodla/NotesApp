@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Update</title>
+    </head>
+    <body bgcolor='#8385ca'>
+        <div align='center'>
+            <h1>Update Note</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form}}
+            <br/>
+            <input type="submit" name="Update">
+        </form>
+        </div>
+    </body>
+</html>

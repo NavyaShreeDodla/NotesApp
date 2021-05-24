@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Update</title>
+    </head>
+    <body bgcolor='#8385ca'>
+        <div align='center'>
+            <p style="font-size:30px">Are you sure you want to delete "{{item}}"?</p>
+            <a href="{% url 'list' %}" ><h1>Cancel</h1></a>
+            <form method="POST" action="">
+	            {% csrf_token %}
+	            <input type="submit" name="Confirm">
+            </form>
+        </div>
+    </body>
+</html>
