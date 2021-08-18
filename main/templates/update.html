@@ -1,15 +1,39 @@
 <html>
     <head>
         <title>Update</title>
+		<STYLE>
+		.center-column{
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+		}
+		input{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		}
+		input[type=submit]{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		background-color: #ffae19;
+		}
+		</style>
     </head>
     <body bgcolor='#8385ca'>
-        <div align='center'>
+        <div class="center-column">
             <h1>Update Note</h1>
         <form method="POST" action="">
             {% csrf_token %}
             {{form}}
             <br/>
-            <input type="submit" name="Update">
+			<br/>
+            <input type="submit" name="Update"/>
         </form>
         </div>
     </body>
